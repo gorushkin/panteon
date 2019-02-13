@@ -1,0 +1,28 @@
+.logo {
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.logo__image {
+  width: 39px;
+  height: 39px;
+  margin-right: 10px;
+}
+
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.logo__first-line {
+  @include first-font (17px, 700, 18px, #ffffff);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.logo__second-line {
+  @include first-font (13px, 200, 15px, #ffffff);
+  text-transform: lowercase;
+}
