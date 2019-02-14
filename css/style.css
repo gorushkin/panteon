@@ -464,7 +464,7 @@ img {
   overflow: hidden; }
 
 .wrapper {
-  width: 290px;
+  width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto; }
@@ -476,9 +476,18 @@ header {
   height: 100vh;
   max-height: 580px; }
 
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 85px; }
+
 .navigation__toggle {
   border: 0;
-  font-size: 0; }
+  font-size: 0;
+  width: 55px;
+  height: 39px;
+  background: #ffffff;
+  cursor: pointer; }
 
 .logo {
   width: 150px;
@@ -511,3 +520,50 @@ header {
   font-weight: 200;
   color: #ffffff;
   text-transform: lowercase; }
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.promo__text {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 13px;
+  line-height: normal;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0.37px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px; }
+  .promo__text b {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 13px;
+    line-height: 10.96px;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 0.71px; }
+
+.promo__title {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 70px;
+  line-height: 19.84px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 65px; }
+
+.promo__video-wrapper {
+  width: 214px;
+  height: 139px;
+  box-shadow: 0 0 0 3px white;
+  margin-bottom: 80px; }
+
+.promo__next-button {
+  display: block;
+  width: 59px;
+  height: 59px;
+  background-color: #e12457;
+  opacity: 0.5; }
