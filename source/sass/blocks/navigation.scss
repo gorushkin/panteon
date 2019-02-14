@@ -1,4 +1,15 @@
+.navigation {
+  // box-shadow: 0 0 0 3px white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 85px;
+}
+
 .navigation__toggle {
   border: 0;
   font-size: 0;
+  width: 55px;
+  height: 39px;
+  background: #ffffff;
+  cursor: pointer;
 }

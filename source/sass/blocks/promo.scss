@@ -1,0 +1,42 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.promo__text {
+  @include first-font (13px, 300, normal, #ffffff);
+  letter-spacing: 0.37px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+
+  b {
+    @include first-font (13px, 500, 10.96px, #ffffff);
+    letter-spacing: 0.71px;
+  }
+}
+
+.promo__title {
+  @include first-font (70px, 700, 19.84px, #ffffff);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 65px;
+}
+
+.promo__video-wrapper {
+  width: 214px;
+  height: 139px;
+  box-shadow: 0 0 0 3px white;
+  margin-bottom: 80px;
+}
+
+.promo__next-button {
+  display: block;
+  width: 59px;
+  height: 59px;
+  background-color: #e12457;
+  opacity: 0.5;
+}
