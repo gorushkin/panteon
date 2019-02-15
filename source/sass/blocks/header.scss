@@ -1,6 +1,8 @@
-header {
+.header {
   background: url("../img/mobile_header_back.png") no-repeat center center;
-  background-size: cover;
+  // background-size: cover;
+  background-size: 100%;
+  width: 100%;
   padding-top: 20px;
   height: 100vh;
   max-height: 580px;
@@ -9,4 +11,11 @@ header {
 
 .header__menu-toggle:checked + .header__main-menu {
   display: block;
+}
+
+@media (min-width: 765px) {
+  .header {
+    background: #e12457;
+    max-height: 940px;
+  }
 }
