@@ -18,9 +18,9 @@
   <!-- // Pixel Glass -->
 </head>
 <body>
-  <header class="">
+  <header class="header">
     <div class="wrapper">
-      <div class="navigation">
+      <div class="header__navigation navigation">
         <div class="navigation__logo logo">
           <img src="img/mobile_header_logo.png" alt="" class="logo__image" width="39" height="39">
           <p class="logo__text">
@@ -28,13 +28,26 @@
             <span class="logo__second-line">Project</span>
           </p>
         </div>
-        <button class="navigation__toggle" type="button">Открыть меню</button>
+        <label for="menu-toggle">
+          <div class="navigation__toggle">Открыть меню</div>
+        </label>
       </div>
-      <!-- <nav class="main-menu"></nav> -->
-      <div class="promo">
+      <input class="header__menu-toggle visually-hidden" type="checkbox" id="menu-toggle">
+      <nav class="header__main-menu main-menu">
+        <label for="menu-toggle">
+          <div class="main-menu__toggle">Закрыть меню</div>
+        </label>
+      </nav>
+      <div class="header__promo promo">
         <p class="promo__text">Пунк назнаячения: <b>Пантеон</b></p>
         <p class="promo__title">Марс</p>
-        <div class="promo__video-wrapper"></div>
+        <div class="promo__video-wrapper">
+          <div class="promo__video"></div>
+          <p class="promo__video-description">Первый город
+              на планете Марс
+              недалеко от горы
+              Олимп</p>
+        </div>
         <button class="promo__next-button"></button>
       </div>
     </div>

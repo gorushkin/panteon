@@ -469,12 +469,22 @@ img {
   padding-right: 15px;
   margin: 0 auto; }
 
-header {
+.header {
   background: url("../img/mobile_header_back.png") no-repeat center center;
-  background-size: cover;
+  background-size: 100%;
+  width: 100%;
   padding-top: 20px;
   height: 100vh;
-  max-height: 580px; }
+  max-height: 580px;
+  position: relative; }
+
+.header__menu-toggle:checked + .header__main-menu {
+  display: block; }
+
+@media (min-width: 765px) {
+  .header {
+    background: #e12457;
+    max-height: 940px; } }
 
 .navigation {
   display: flex;
@@ -521,6 +531,31 @@ header {
   color: #ffffff;
   text-transform: lowercase; }
 
+.main-menu {
+  width: 100%;
+  background-color: #e12457;
+  display: none;
+  position: absolute;
+  height: 100vh;
+  max-height: 580px;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding-top: 20px; }
+
+.main-menu__toggle {
+  border: 0;
+  font-size: 0;
+  width: 55px;
+  height: 39px;
+  background: #ffffff;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: 15px; }
+  .main-menu__toggle:checked + .header__main-menu {
+    display: none; }
+
 .promo {
   display: flex;
   flex-direction: column;
@@ -559,11 +594,25 @@ header {
   width: 214px;
   height: 139px;
   box-shadow: 0 0 0 3px white;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  position: relative; }
+
+.promo__video-description {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 200;
+  color: #ffcfdf;
+  position: absolute;
+  top: 112px;
+  left: 90px; }
 
 .promo__next-button {
   display: block;
   width: 59px;
   height: 59px;
   background-color: #e12457;
-  opacity: 0.5; }
+  opacity: 0.5;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none; }
