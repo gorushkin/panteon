@@ -1,7 +1,9 @@
 .header {
-  background: url("../img/mobile_header_back.png") no-repeat center center;
-  // background-size: cover;
-  background-size: 100%;
+  background-color: #e12457;
+  background-image: url("../img/mobile_header_back.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
   width: 100%;
   padding-top: 20px;
   height: 100vh;
@@ -13,9 +15,10 @@
   display: block;
 }
 
-@media (min-width: 765px) {
+@media (min-width: $tablet-width) {
   .header {
-    background: #e12457;
+    background-image: url("../img/tablet_header_back.png");
     max-height: 940px;
+    padding-top: 25px;
   }
 }

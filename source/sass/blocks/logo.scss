@@ -2,7 +2,7 @@
   width: 150px;
   display: flex;
   align-items: center;
-  // box-shadow: 0 0 0 3px white;
+  // box-shadow: 0 0 0 3px blue;
 }
 
 .logo__image {
@@ -26,4 +26,24 @@
 .logo__second-line {
   @include first-font (13px, 200, 15px, #ffffff);
   text-transform: lowercase;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    width: 180px;
+  }
+
+  .logo__image {
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+  }
+
+  .logo__first-line {
+    @include first-font (21px, 700, 21px, #ffffff);
+  }
+
+  .logo__second-line {
+    @include first-font (16px, 200, 18px, #ffffff);
+  }
 }

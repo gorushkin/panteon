@@ -10,6 +10,15 @@
   font-size: 0;
   width: 55px;
   height: 39px;
-  background: #ffffff;
+  // background: #ffffff;
+  box-shadow: 0 0 0 3px white;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__toggle {
+    @include first-font (18px, 500, 30px, #ffffff);
+    letter-spacing: 0.45px;
+    width: 115px;
+  }
 }
