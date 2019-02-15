@@ -29,8 +29,16 @@
 .promo__video-wrapper {
   width: 214px;
   height: 139px;
-  box-shadow: 0 0 0 3px white;
+  // box-shadow: 0 0 0 3px white;
   margin-bottom: 80px;
+  position: relative;
+}
+
+.promo__video-description {
+  @include first-font (14px, 200, 17px, #ffcfdf);
+  position: absolute;
+  top: 112px;
+  left: 90px;
 }
 
 .promo__next-button {
@@ -39,4 +47,6 @@
   height: 59px;
   background-color: #e12457;
   opacity: 0.5;
+  border-radius: 50%;
+  border: none;
 }

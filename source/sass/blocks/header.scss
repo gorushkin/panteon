@@ -4,4 +4,9 @@ header {
   padding-top: 20px;
   height: 100vh;
   max-height: 580px;
+  position: relative;
+}
+
+.header__menu-toggle:checked + .header__main-menu {
+  display: block;
 }

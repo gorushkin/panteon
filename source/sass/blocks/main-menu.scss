@@ -1,0 +1,28 @@
+.main-menu {
+  width: 100%;
+  background-color: #e12457;
+  display: none;
+  position: absolute;
+  height: 100vh;
+  max-height: 580px;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding-top: 20px;
+}
+
+.main-menu__toggle {
+  border: 0;
+  font-size: 0;
+  width: 55px;
+  height: 39px;
+  background: #ffffff;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: 15px;
+
+  &:checked + .header__main-menu {
+    display: none;
+  }
+}
