@@ -1,6 +1,6 @@
 .header {
   background-color: #e12457;
-  background-image: url("../img/mobile_header_back.png");
+  background-image: url("../img/header_back_mobile.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% 100%;
@@ -17,7 +17,7 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    background-image: url("../img/tablet_header_back.png");
+    background-image: url("../img/header_back_tablet.jpg");
     max-height: 940px;
     padding-top: 25px;
   }
@@ -25,7 +25,7 @@
 
 @media (min-width: $desktop-width) {
   .header {
-    background-image: url("../img/desktop_header_back.png");
+    background-image: url("../img/header_back_desktop.jpg");
     padding-top: 25px;
     max-height: none;
     height: none;
