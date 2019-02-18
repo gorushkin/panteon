@@ -22,3 +22,12 @@
     padding-top: 25px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .header {
+    background-image: url("../img/desktop_header_back.png");
+    padding-top: 25px;
+    max-height: none;
+    height: none;
+  }
+}

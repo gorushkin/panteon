@@ -1,5 +1,4 @@
 .navigation {
-  // box-shadow: 0 0 0 3px white;
   display: flex;
   justify-content: space-between;
   margin-bottom: 85px;
@@ -10,12 +9,15 @@
   font-size: 0;
   width: 55px;
   height: 39px;
-  // background: #ffffff;
   box-shadow: 0 0 0 3px white;
   cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
+  .navigation {
+    margin-bottom: 185px;
+  }
+
   .navigation__toggle {
     @include first-font (18px, 500, 30px, #ffffff);
     letter-spacing: 0.45px;
