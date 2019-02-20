@@ -24,3 +24,9 @@
     width: 115px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .navigation {
+    margin-bottom: 173px;
+  }
+}

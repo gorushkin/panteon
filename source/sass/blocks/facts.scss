@@ -1,0 +1,55 @@
+.facts {
+  width: 100%;
+  background: #fff5f8;
+  overflow: hidden;
+  padding-top: 41px;
+}
+
+.facts__list {
+  @include listreset;
+  display: flex;
+  width: 999px;
+}
+
+.facts__item {
+  width: 170px;
+  margin-right: 22px;
+  flex: 0 0 auto;
+}
+
+.card {
+  padding-left: 18px;
+}
+
+.card__title {
+  @include first-font (36px, 700, 24px,#e12457);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.card__text {
+  @include first-font (13px, 700, 18px,#4d4d4d);
+  width: 130px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .facts {
+    padding-top: 56px;
+  }
+
+  .card__title {
+    @include first-font (48px, 700, 24px,#e12457);
+    margin-bottom: 25px;
+  }
+
+  .card__text {
+    @include first-font (13px, 700, 18px,#4d4d4d);
+    width: 130px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}

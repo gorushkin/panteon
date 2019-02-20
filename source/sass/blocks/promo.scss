@@ -31,7 +31,7 @@
   height: 139px;
   margin-bottom: 80px;
   position: relative;
-  // box-shadow: 0 25px 38px rgba(0, 0, 0, 0.48);
+  box-shadow: 0 25px 38px rgba(0, 0, 0, 0.48);
   // background-color: #1c256d;
   // opacity: 0.7;
   // background-image: url("../img/video_back.jpg");
@@ -56,7 +56,7 @@
   background-size: cover;
   width: 100%;
   height: 100%;
-  opacity: 0.7;
+  opacity: 0.3;
 }
 
 .promo__video-description {
@@ -112,6 +112,46 @@
   }
 
   .promo__next-button {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__text {
+    @include first-font (37px, 300, normal, #ffffff);
+    letter-spacing: 0.7px;
+    margin-bottom: 69px;
+
+
+    b {
+      @include first-font (37px, 500, 15.09px, #ffffff);
+      letter-spacing: 0.71px;
+    }
+  }
+
+  .promo__title {
+    @include first-font (195px, 700, 27.31px, #ffffff);
+    letter-spacing: 19.27px;
+    margin-bottom: 95px;
+  }
+
+  .promo__video-wrapper {
+    width: 582px;
+    height: 292px;
+    margin-bottom: 25px;
+    margin-right: 12px;
+  }
+
+  .promo__video-description {
+    @include first-font (14px, 200, 17px, #ffcfdf);
+    position: absolute;
+    top: 95px;
+    left: 644px;
+  }
+
+  .promo__next-button {
+    margin-right: auto;
     width: 75px;
     height: 75px;
   }
