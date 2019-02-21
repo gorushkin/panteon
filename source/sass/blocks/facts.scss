@@ -1,5 +1,4 @@
 .facts {
-  width: 100%;
   background: #fff5f8;
   overflow: hidden;
   padding-top: 41px;
@@ -51,5 +50,25 @@
 }
 
 @media (min-width: $desktop-width) {
+  .facts {
+    width: 100%;
+    margin-bottom: 55px;
+  }
 
+  .facts__list {
+    justify-content: space-between;
+    width: 1170px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
+
+  .facts__item {
+    width: auto;
+    margin-right: 0;
+  }
+
+  .card {
+    padding-left: 0;
+  }
 }

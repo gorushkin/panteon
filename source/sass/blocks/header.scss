@@ -18,8 +18,11 @@
 @media (min-width: $tablet-width) {
   .header {
     background-image: url("../img/header_back_tablet.jpg");
-    max-height: 940px;
+    height: 940px;
+    max-height: none;
+    // height: auto;
     padding-top: 25px;
+    background-color: black;
   }
 }
 
@@ -27,8 +30,8 @@
   .header {
     background-image: url("../img/header_back_desktop.jpg");
     padding-top: 36px;
-    max-height: none;
-    height: none;
+    // max-height: none;
+    height: 950px;
   }
 }
 
