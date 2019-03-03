@@ -1,0 +1,26 @@
+.info {
+  padding-top: 58px;
+}
+
+.info__promo-text {
+  @include first-font (36px, 700, 40px, rgba(225, 36, 87, 255));
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.info__block {
+  margin-bottom: 50px;
+}
+
+.info__title {
+  @include first-font (24px, 700, 27px, rgba(0, 0, 0, 255));
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.info__text {
+  @include first-font (14px, 700, 24px, rgba(77, 77, 77, 255));
+  margin: 0;
+  margin-bottom: 50px;
+}
+

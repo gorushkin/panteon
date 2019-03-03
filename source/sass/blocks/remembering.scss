@@ -1,0 +1,33 @@
+.remembering {
+  padding-top: 55px;
+  background-image: url("../img/rocket.png");
+  background-repeat: no-repeat;
+  background-position: -789px -418px;
+  padding-bottom: 152px;
+}
+
+.remembering__promo-text {
+  @include first-font (36px, 700, 43px, rgba(225, 36, 87, 255));
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.remembering__list {
+  @include listreset;
+}
+
+.remembering__block {
+  margin-bottom: 50px;
+}
+
+.remembering__title {
+  @include first-font (24px, 700, 30px, rgba(0, 0, 0, 255));
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.remembering__text {
+  @include first-font (14px, 700, 24px, rgba(77, 77, 77, 255));
+  margin: 0;
+  margin-bottom: 10px;
+}
