@@ -31,3 +31,30 @@
   margin: 0;
   margin-bottom: 10px;
 }
+
+@media (min-width: $tablet-width) {
+  .remembering {
+    border-color: aqua;
+    background-image: url("../img/rocket_tablet.png");
+    padding-top: 85px;
+    background-position: -1289px -1764px;
+  }
+
+  .remembering__promo-text {
+    @include first-font (48px, 700, 43px, rgba(225, 36, 87, 255));
+    margin-bottom: 50px;
+  }
+
+  .remembering__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .remembering__block {
+    width: 345px;
+  }
+
+  .remembering__title {
+    margin-bottom: 20px;
+  }
+}
