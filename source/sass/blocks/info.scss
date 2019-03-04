@@ -25,26 +25,44 @@
   margin-bottom: 25px;
 }
 
+.info__text-block {
+  margin-bottom: 35px;
+}
+
 .info__text {
-  @include first-font (14px, 700, 24px, rgba(77, 77, 77, 255));
+  @include first-font (16px, 500, 24px, #4c4c4c);
   margin: 0;
-  margin-bottom: 50px;
-  text-align: justify;
+  text-align: left;
 
   &--first-block {
-    margin-bottom: 170px;
+    margin-bottom: 280px;
+  }
+
+  &--last-block {
+    margin-bottom: 13px;
   }
 
   &--quotes {
+    @include first-font (18px, 700, 24px, #4c4c4c);
     color: red;
+    position: relative;
+
+    &::before {
+      @include first-font (50px, 700, 24px, #e12457);
+      content: "‘‘";
+      position: absolute;
+      top: -14px;
+      left: -14px;
+    }
   }
 }
 
-img {
-  border: 1px solid red;
+.info__photo {
   display: block;
-  margin-top: -620px;
+  margin-top: -717px;
+  margin-left: -42px;
   order: 5;
+  box-shadow: 37px -34px 0 -10px #ffffff, 36px -33px 0 0 #e12457;
 }
 
 @media (min-width: $tablet-width) {
