@@ -27,6 +27,10 @@
 
 .info__text-block {
   margin-bottom: 35px;
+
+  &--second {
+    margin-bottom: 50px;
+  }
 }
 
 .info__text {
@@ -62,6 +66,7 @@
   margin-top: -717px;
   margin-left: -42px;
   order: 5;
+  margin-bottom: 550px;
   box-shadow: 37px -34px 0 -10px #ffffff, 36px -33px 0 0 #e12457;
 }
 
@@ -88,7 +93,6 @@
     margin-right: 21px;
 
     &:last-of-type {
-      // background: red;
       width: 720px;
     }
   }
@@ -141,7 +145,6 @@
     height: 373px;
     margin-top: -8px;
     box-shadow: 51px -46px 0 -10px #ffffff, 51px -46px 0 0 #e12457;
-
   }
 
   .info__text-block--second {

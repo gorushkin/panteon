@@ -1,0 +1,10 @@
+.fly-cost {
+  background-image: url("../img/info_rocket.png"), url("../img/info_back_mobile.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center bottom;
+  height: 800px;
+}
+
+.fly-cost__title {
+  @include first-font (24px, 700, 24px, #ffffff);
+}
