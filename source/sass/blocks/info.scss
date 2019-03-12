@@ -5,9 +5,6 @@
   align-items: center;
 }
 
-.info-wrapper {
-  // box-shadow: 0 0 0 3px red;
-}
 
 .info__promo-text {
   @include first-font (36px, 700, 40px, rgba(225, 36, 87, 255));
