@@ -6,7 +6,7 @@
 }
 
 .info-wrapper {
-  box-shadow: 0 0 0 3px red;
+  // box-shadow: 0 0 0 3px red;
 }
 
 .info__promo-text {
@@ -68,37 +68,14 @@
 @media (min-width: $tablet-width) {
   .info {
     flex-direction: row;
-    box-shadow: 0 0 0 3px red;
     flex-wrap: wrap;
+    padding-top: 65px;
   }
 
   .info__promo-text {
+    @include first-font (48px, 700, 40px, rgba(225, 36, 87, 255));
     width: 100%;
-  }
-
-  .info__text-block {
-    width: 65%;
-    box-shadow: 0 0 0 3px blue;
-  }
-
-  .info__text {
-    &--first-block {
-      margin-bottom: 0;
-    }
-  }
-
-  img {
-    width: 25%;
-    order: 0;
-    margin: 0;
-    height: 250px;
-    margin-left: auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .info {
-    align-items: flex-start;
+    margin-bottom: 50px;
   }
 
   .info__title {
@@ -106,20 +83,77 @@
   }
 
   .info__text-block {
-    // background: green;
-    margin-bottom: 180px;
+    width: 500px;
+    margin-bottom: 25px;
+    margin-right: 21px;
+
+    &:last-of-type {
+      // background: red;
+      width: 720px;
+    }
   }
 
-  img {
-    width: 25%;
+  .info__text {
+    &--first-block {
+      margin-bottom: 35px;
+    }
+  }
+
+  .info__photo {
+    width: 165px;
+    height: 189px;
     order: 0;
     margin: 0;
-    height: 450px;
-    margin-left: auto;
+    margin-top: -10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info {
+    align-items: flex-start;
+    padding-top: 29px;
   }
 
-  .info__text--last-block {
-    width: 65%;
-    margin-top: -200px;
+  .info__promo-text {
+    @include first-font (60px, 700, 40px, rgba(225, 36, 87, 255));
+    width: 100%;
+    margin-bottom: 55px;
+  }
+
+  .info__title {
+    width: 100%;
+  }
+
+  .info__text-block {
+    margin-bottom: 180px;
+    margin-right: 63px;
+    width: 700px;
+  }
+
+  .info__text--first-block {
+    margin-bottom: 32px;
+  }
+
+  .info__photo {
+    width: 325px;
+    order: 0;
+    margin: 0;
+    height: 373px;
+    margin-top: -8px;
+    box-shadow: 51px -46px 0 -10px #ffffff, 51px -46px 0 0 #e12457;
+
+  }
+
+  .info__text-block--second {
+    width: 700px;
+    margin-top: -167px;
+  }
+
+  .info__text::before {
+    @include first-font (60px, 700, 24px, #e12457);
+    content: "‘‘";
+    position: absolute;
+    top: -6px;
+    left: -55px;
   }
 }
