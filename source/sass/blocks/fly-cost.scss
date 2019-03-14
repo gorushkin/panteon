@@ -1,10 +1,31 @@
 .fly-cost {
   background-image: url("../img/info_rocket.png"), url("../img/info_back_mobile.png");
   background-repeat: no-repeat, no-repeat;
-  background-position: center top, center bottom;
-  height: 800px;
+  background-position: center top, center 145px;
+  min-height: 800px;
+}
+
+.fly-cost__wrapper {
+  padding-top: 325px;
 }
 
 .fly-cost__title {
   @include first-font (24px, 700, 24px, #ffffff);
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.fly-cost__text {
+  @include first-font (16px, 400, 24px, #ffffff);
+  margin-bottom: 37px;
+}
+
+.fly-cost__price {
+  @include first-font (60px, 300, 60px, #ffffff);
+  display: block;
+}
+
+.fly-cost__promo-text {
+  @include first-font (24px, 300, 60px, #ffffff);
+  display: block;
 }
