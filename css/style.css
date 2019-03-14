@@ -966,7 +966,7 @@ img {
 .info__text-block {
   margin-bottom: 35px; }
   .info__text-block--second {
-    margin-bottom: 50px; }
+    margin-bottom: 7px; }
 
 .info__text {
   font-family: "Proxima Nova", sans-serif;
@@ -1081,12 +1081,41 @@ img {
 .fly-cost {
   background-image: url("../img/info_rocket.png"), url("../img/info_back_mobile.png");
   background-repeat: no-repeat, no-repeat;
-  background-position: center top, center bottom;
-  height: 800px; }
+  background-position: center top, center 145px;
+  min-height: 800px; }
+
+.fly-cost__wrapper {
+  padding-top: 325px; }
 
 .fly-cost__title {
   font-family: "Proxima Nova", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
-  color: #ffffff; }
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 23px; }
+
+.fly-cost__text {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 37px; }
+
+.fly-cost__price {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 300;
+  color: #ffffff;
+  display: block; }
+
+.fly-cost__promo-text {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 24px;
+  line-height: 60px;
+  font-weight: 300;
+  color: #ffffff;
+  display: block; }
