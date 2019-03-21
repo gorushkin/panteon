@@ -1012,7 +1012,8 @@ img {
   .info {
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 65px; }
+    padding-top: 65px;
+    margin-bottom: 0; }
   .info__promo-text {
     font-family: "Proxima Nova", sans-serif;
     font-size: 48px;
@@ -1096,7 +1097,11 @@ img {
   transform: translate(-50%, -50%);
   width: 289px;
   height: 289px;
-  background: url("../img/info_rocket.png"); }
+  background: url("../img/info_rocket.png");
+  background-size: cover; }
+
+.fly-cost__text-block {
+  margin-bottom: 37px; }
 
 .fly-cost__title {
   font-family: "Proxima Nova", sans-serif;
@@ -1112,8 +1117,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #ffffff;
-  margin-bottom: 37px; }
+  color: #ffffff; }
 
 .price-block__price {
   font-family: "Proxima Nova", sans-serif;
@@ -1155,9 +1159,41 @@ img {
 
 @media (min-width: 750px) {
   .fly-cost {
-    background: #ffffff;
-    box-shadow: 0 0 0 3px red; }
+    background: #ffffff; }
+  .fly-cost__rocket-container {
+    width: 253px;
+    height: 253px;
+    left: 0;
+    top: 0;
+    transform: translate(80px, -46px); }
   .fly-cost__wrapper {
-    background-image: url("../img/info_rocket.png"), url("../img/info_back_tablet.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: center top, center top; } }
+    width: 720px;
+    padding: 0;
+    padding-top: 47px;
+    background: url("../img/info_back_tablet.png") no-repeat;
+    background-size: 100% auto; }
+  .fly-cost__text-block {
+    width: 300px;
+    margin-left: auto;
+    margin-right: 35px;
+    margin-bottom: 47px; }
+  .fly-cost__title {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff; }
+  .price-block {
+    display: flex;
+    padding: 0 32px; }
+  .price-block__price {
+    margin-right: 25px; }
+  .price-block__promo-text {
+    line-height: normal;
+    margin: 0; }
+    .price-block__promo-text::after {
+      bottom: 32px; }
+  .price-block__button {
+    margin-left: auto;
+    width: 200px;
+    height: 57px; } }
