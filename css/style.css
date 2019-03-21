@@ -940,7 +940,8 @@ img {
   padding-top: 58px;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 145px; }
 
 .info__promo-text {
   font-family: "Proxima Nova", sans-serif;
@@ -1027,7 +1028,8 @@ img {
     margin-bottom: 25px;
     margin-right: 21px; }
     .info__text-block:last-of-type {
-      width: 720px; }
+      width: 720px;
+      margin-bottom: 80px; }
   .info__text--first-block {
     margin-bottom: 35px; }
   .info__photo {
@@ -1079,13 +1081,22 @@ img {
     left: -55px; } }
 
 .fly-cost {
-  background-image: url("../img/info_rocket.png"), url("../img/info_back_mobile.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center top, center 145px;
-  min-height: 800px; }
+  background: url("../img/info_back_mobile.png") no-repeat center top;
+  background-size: 100% auto;
+  position: relative; }
 
 .fly-cost__wrapper {
-  padding-top: 325px; }
+  padding-top: 180px;
+  min-height: 650px; }
+
+.fly-cost__rocket-container {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 289px;
+  height: 289px;
+  background: url("../img/info_rocket.png"); }
 
 .fly-cost__title {
   font-family: "Proxima Nova", sans-serif;
@@ -1104,7 +1115,7 @@ img {
   color: #ffffff;
   margin-bottom: 37px; }
 
-.fly-cost__price {
+.price-block__price {
   font-family: "Proxima Nova", sans-serif;
   font-size: 60px;
   line-height: 60px;
@@ -1113,7 +1124,7 @@ img {
   display: block;
   margin-bottom: 5px; }
 
-.fly-cost__promo-text {
+.price-block__promo-text {
   font-family: "Proxima Nova", sans-serif;
   font-size: 24px;
   line-height: 60px;
@@ -1122,7 +1133,7 @@ img {
   display: block;
   position: relative;
   margin-bottom: 32px; }
-  .fly-cost__promo-text::after {
+  .price-block__promo-text::after {
     position: absolute;
     content: "";
     width: 218px;
@@ -1131,7 +1142,7 @@ img {
     bottom: 13px;
     left: 0; }
 
-.fly-cost__button {
+.price-block__button {
   font-family: "Proxima Nova", sans-serif;
   font-size: 18px;
   line-height: 57px;
@@ -1141,3 +1152,12 @@ img {
   background: #ffffff;
   text-align: center;
   border-radius: 30px; }
+
+@media (min-width: 750px) {
+  .fly-cost {
+    background: #ffffff;
+    box-shadow: 0 0 0 3px red; }
+  .fly-cost__wrapper {
+    background-image: url("../img/info_rocket.png"), url("../img/info_back_tablet.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center top, center top; } }
