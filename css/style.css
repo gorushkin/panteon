@@ -1110,7 +1110,8 @@ img {
   line-height: 60px;
   font-weight: 300;
   color: #ffffff;
-  display: block; }
+  display: block;
+  margin-bottom: 5px; }
 
 .fly-cost__promo-text {
   font-family: "Proxima Nova", sans-serif;
@@ -1118,4 +1119,25 @@ img {
   line-height: 60px;
   font-weight: 300;
   color: #ffffff;
-  display: block; }
+  display: block;
+  position: relative;
+  margin-bottom: 32px; }
+  .fly-cost__promo-text::after {
+    position: absolute;
+    content: "";
+    width: 218px;
+    height: 1px;
+    background: #ffffff;
+    bottom: 13px;
+    left: 0; }
+
+.fly-cost__button {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 18px;
+  line-height: 57px;
+  font-weight: 500;
+  color: #c6529a;
+  display: block;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 30px; }
