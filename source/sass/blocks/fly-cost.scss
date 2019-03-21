@@ -84,6 +84,8 @@
     padding-top: 47px;
     background: url("../img/info_back_tablet.png") no-repeat;
     background-size: 100% auto;
+    min-height: 0;
+    padding-bottom: 50px;
   }
 
   .fly-cost__text-block {
@@ -119,5 +121,49 @@
     margin-left: auto;
     width: 200px;
     height: 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fly-cost__wrapper {
+    width: 1140px;
+    padding-top: 57px;
+    padding-bottom: 51px;
+  }
+
+  .fly-cost__rocket-container {
+    width: 310px;
+    height: 310px;
+    transform: translate(27px, -29px);
+  }
+
+  .fly-cost__text-block {
+    margin-right: 130px;
+    width: 610px;
+    margin-bottom: 16px;
+  }
+
+  .fly-cost__price-block {
+    margin-left: auto;
+    margin-right: 65px;
+    padding: 0;
+    width: 680px;
+  }
+
+  .price-block__price {
+    margin-right: 40px;
+  }
+
+  .price-block__promo-text {
+    margin-top: 10px;
+
+    &::after {
+      bottom: 22px;
+      left: 3px;
+    }
+  }
+
+  .price-block__button {
+    margin-top: 5px;
   }
 }

@@ -91,7 +91,7 @@
     margin-bottom: 25px;
     margin-right: 21px;
 
-    &:last-of-type {
+    &--second {
       width: 720px;
       margin-bottom: 80px;
     }
@@ -150,6 +150,7 @@
   .info__text-block--second {
     width: 700px;
     margin-top: -167px;
+    margin-bottom: 75px;
   }
 
   .info__text::before {
