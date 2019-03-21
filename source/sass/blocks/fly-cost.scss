@@ -1,12 +1,25 @@
 .fly-cost {
-  background-image: url("../img/info_rocket.png"), url("../img/info_back_mobile.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center top, center 145px;
-  min-height: 800px;
+  // background-image: url("../img/info_rocket.png"), url("../img/info_back_mobile.png");
+  background: url("../img/info_back_mobile.png") no-repeat center top;
+  background-size: 100% auto;
+  position: relative;
+  // background-repeat: no-repeat, no-repeat;
+  // background-position: center top, center 145px;
 }
 
 .fly-cost__wrapper {
-  padding-top: 325px;
+  padding-top: 180px;
+  min-height: 650px;
+}
+
+.fly-cost__rocket-container {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 289px;
+  height: 289px;
+  background: url("../img/info_rocket.png");
 }
 
 .fly-cost__title {
@@ -20,13 +33,13 @@
   margin-bottom: 37px;
 }
 
-.fly-cost__price {
+.price-block__price {
   @include first-font (60px, 300, 60px, #ffffff);
   display: block;
   margin-bottom: 5px;
 }
 
-.fly-cost__promo-text {
+.price-block__promo-text {
   @include first-font (24px, 300, 60px, #ffffff);
   display: block;
   position: relative;
@@ -43,10 +56,23 @@
   }
 }
 
-.fly-cost__button {
+.price-block__button {
   @include first-font (18px, 500, 57px, #c6529a);
   display: block;
   background: #ffffff;
   text-align: center;
   border-radius: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .fly-cost {
+    background: #ffffff;
+    box-shadow: 0 0 0 3px red;
+  }
+
+  .fly-cost__wrapper {
+    background-image: url("../img/info_rocket.png"), url("../img/info_back_tablet.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center top, center top;
+  }
 }
