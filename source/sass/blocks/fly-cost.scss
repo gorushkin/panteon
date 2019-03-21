@@ -1,10 +1,7 @@
 .fly-cost {
-  // background-image: url("../img/info_rocket.png"), url("../img/info_back_mobile.png");
   background: url("../img/info_back_mobile.png") no-repeat center top;
   background-size: 100% auto;
   position: relative;
-  // background-repeat: no-repeat, no-repeat;
-  // background-position: center top, center 145px;
 }
 
 .fly-cost__wrapper {
@@ -20,6 +17,11 @@
   width: 289px;
   height: 289px;
   background: url("../img/info_rocket.png");
+  background-size: cover;
+}
+
+.fly-cost__text-block {
+  margin-bottom: 37px;
 }
 
 .fly-cost__title {
@@ -30,7 +32,6 @@
 
 .fly-cost__text {
   @include first-font (16px, 400, 24px, #ffffff);
-  margin-bottom: 37px;
 }
 
 .price-block__price {
@@ -67,12 +68,56 @@
 @media (min-width: $tablet-width) {
   .fly-cost {
     background: #ffffff;
-    box-shadow: 0 0 0 3px red;
+  }
+
+  .fly-cost__rocket-container {
+    width: 253px;
+    height: 253px;
+    left: 0;
+    top: 0;
+    transform: translate(80px, -46px);
   }
 
   .fly-cost__wrapper {
-    background-image: url("../img/info_rocket.png"), url("../img/info_back_tablet.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: center top, center top;
+    width: 720px;
+    padding: 0;
+    padding-top: 47px;
+    background: url("../img/info_back_tablet.png") no-repeat;
+    background-size: 100% auto;
+  }
+
+  .fly-cost__text-block {
+    width: 300px;
+    margin-left: auto;
+    margin-right: 35px;
+    margin-bottom: 47px;
+  }
+
+  .fly-cost__title {
+    @include first-font (24px, 700, 24px, #ffffff);
+  }
+
+  .price-block {
+    display: flex;
+    padding: 0 32px;
+  }
+
+  .price-block__price {
+    margin-right: 25px;
+  }
+
+  .price-block__promo-text {
+    line-height: normal;
+    margin: 0;
+
+    &::after {
+      bottom: 32px;
+    }
+  }
+
+  .price-block__button {
+    margin-left: auto;
+    width: 200px;
+    height: 57px;
   }
 }
