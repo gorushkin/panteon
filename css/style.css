@@ -1083,12 +1083,12 @@ img {
 
 .fly-cost {
   background: url("../img/info_back_mobile.png") no-repeat center top;
-  background-size: 100% auto;
-  position: relative; }
+  background-size: 100% auto; }
 
 .fly-cost__wrapper {
   padding-top: 180px;
-  min-height: 650px; }
+  min-height: 650px;
+  position: relative; }
 
 .fly-cost__rocket-container {
   position: absolute;
@@ -1165,7 +1165,7 @@ img {
     height: 253px;
     left: 0;
     top: 0;
-    transform: translate(80px, -46px); }
+    transform: translate(49px, -46px); }
   .fly-cost__wrapper {
     width: 720px;
     padding: 0;
