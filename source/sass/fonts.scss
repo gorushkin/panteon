@@ -30,3 +30,20 @@
     url("../fonts/proximanovat-thin-webfont.woff2") format("woff2"),
     url("../fonts/proximanovat-thin-webfont.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("opensans-bold-webfont.woff2") format("woff2"),
+    url("opensans-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("opensans-light-webfont.woff2") format("woff2"),
+    url("opensans-light-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
