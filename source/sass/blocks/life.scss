@@ -103,7 +103,7 @@
   }
 
   .menu__item-title {
-    font-size: 0;
+    // font-size: 0;
 
     &::before {
       left: 0;
@@ -119,7 +119,7 @@
 
   .menu__input:checked {
     & + .menu__item-title {
-      font-size: 20px;
+      // font-size: 20px;
     }
   }
 }
