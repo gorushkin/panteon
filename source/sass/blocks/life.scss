@@ -7,12 +7,9 @@
 }
 
 .life__bar {
-  // box-shadow: 0 0 0 3px red;
   width: 30px;
   margin-top: 10px;
-  // border-left: 2px solid #e12457;
   position: relative;
-  // background: #e12457;
 
   &::before {
     position: absolute;
@@ -33,21 +30,30 @@
 
 .menu__item-title {
   @include first-font (20px, 700, 24px,#e12457);
-  margin-left: 25px;
+  margin-left: 45px;
   position: relative;
   cursor: pointer;
 
   &::before {
     position: absolute;
     content: "";
-    left: -48px;
+    left: -68px;
     top: 3px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    // background: #e12457;
     background: #ffffff;
     border: 4px solid #e12457;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: -25px;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    background: #e12457;
   }
 }
 
@@ -65,6 +71,55 @@
 
     & ~ .menu__block {
       display: block;
+    }
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .life__container {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .life__bar {
+    width: auto;
+    height: 30px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: #e12457;
+      left: 0;
+      top: -10px;
+    }
+  }
+
+  .menu {
+    display: flex;
+    width: 750px;
+  }
+
+  .menu__item-title {
+    font-size: 0;
+
+    &::before {
+      left: 0;
+      top: -55px;
+    }
+  }
+
+  .menu__block {
+    position: absolute;
+    left: 0;
+    top: 20px;
+  }
+
+  .menu__input:checked {
+    & + .menu__item-title {
+      font-size: 20px;
     }
   }
 }
