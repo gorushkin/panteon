@@ -36,5 +36,3 @@ function titleHandler(i) {
 for (var i = 0; i < headerList.length; i++) {
   titleHandler(i);
 }
-
-
