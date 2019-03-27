@@ -306,6 +306,7 @@
   .extra-info {
     background-image: url("../img/extra-info_back_desktop.png");
     padding-top: 98px;
+    margin-bottom: 97px;
   }
 
   .extra-info__title {
@@ -319,6 +320,10 @@
     height: 572px;
     background: url("../img/extra-info_video_desktop.png") no-repeat center;
     margin-bottom: 71px;
+  }
+
+  .extra-info__wrapper {
+    margin-bottom: 61px;
   }
 
   .answers {
