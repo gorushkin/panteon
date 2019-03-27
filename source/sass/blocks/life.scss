@@ -7,17 +7,18 @@
 }
 
 .life__bar {
-  width: 30px;
+  width: 16px;
   margin-top: 10px;
   position: relative;
+  // box-shadow: 0 0 0 3px blue;
 
   &::before {
     position: absolute;
     content: "";
-    width: 2px;
+    width: 3px;
     height: 100%;
     background: #e12457;
-    left: 15px;
+    left: 6px;
     top: 0;
   }
 }
@@ -32,29 +33,68 @@
   display: flex;
   position: relative;
   cursor: pointer;
+  margin-left: 10px;
 
   &::before {
     position: absolute;
     content: "";
-    left: -28px;
+    left: -27px;
     top: 3px;
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    // background: #ffffff;
+    background: #e12457;
+    // border: 4px solid #e12457;
+  }
+}
+
+.hide {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: -24px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: #ffffff;
-    border: 4px solid #e12457;
   }
 }
 
 .menu__item-logo {
-  width: 24px;
-  height: 24px;
-  background: #e12457;
+  width: 30px;
+  height: 30px;
+  // background: #e12457;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--teacup {
+    background-image: url("../img/life__icon_teapot.png");
+  }
+
+  &--helmet {
+    background-image: url("../img/life__icon_helmet.png");
+  }
+
+  &--microscope {
+    background-image: url("../img/life__icon_microscope.png");
+  }
+
+  &--photo {
+    background-image: url("../img/life__icon_photo.png");
+  }
+
+  &--leaves {
+    background-image: url("../img/life__icon_leaves.png");
+  }
 }
 
 .menu__item-title {
-  @include first-font (20px, 700, 24px,#e12457);
-  margin-left: 45px;
+  @include first-font (20px, 700, 30px,#e12457);
+  margin-left: 35px;
   position: relative;
   cursor: pointer;
 }
