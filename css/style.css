@@ -1487,8 +1487,9 @@ img {
   display: flex; }
 
 .life__bar {
-  width: 16px;
+  width: 30px;
   margin-top: 10px;
+  margin-bottom: 10px;
   position: relative; }
   .life__bar::before {
     position: absolute;
@@ -1510,12 +1511,13 @@ img {
   display: flex;
   position: relative;
   cursor: pointer;
-  margin-left: 10px; }
+  margin-left: 10px;
+  margin-bottom: 18px; }
   .menu__item-header::before {
     position: absolute;
     content: "";
     left: -27px;
-    top: 3px;
+    top: 6px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -1527,7 +1529,7 @@ img {
     position: absolute;
     content: "";
     left: -24px;
-    top: 6px;
+    top: 9px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -1564,6 +1566,17 @@ img {
 
 .show {
   display: block; }
+
+.menu__image {
+  width: 262px;
+  height: 125px; }
+
+.menu__title {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000; }
 
 @media (min-width: 750px) and (max-width: 1170px) {
   .life__container {
