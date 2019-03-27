@@ -1487,16 +1487,16 @@ img {
   display: flex; }
 
 .life__bar {
-  width: 30px;
+  width: 16px;
   margin-top: 10px;
   position: relative; }
   .life__bar::before {
     position: absolute;
     content: "";
-    width: 2px;
+    width: 3px;
     height: 100%;
     background: #e12457;
-    left: 15px;
+    left: 6px;
     top: 0; }
 
 .menu {
@@ -1509,30 +1509,53 @@ img {
 .menu__item-header {
   display: flex;
   position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-left: 10px; }
   .menu__item-header::before {
     position: absolute;
     content: "";
-    left: -28px;
+    left: -27px;
     top: 3px;
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
-    background: #ffffff;
-    border: 4px solid #e12457; }
+    background: #e12457; }
+
+.hide {
+  position: relative; }
+  .hide::after {
+    position: absolute;
+    content: "";
+    left: -24px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff; }
 
 .menu__item-logo {
-  width: 24px;
-  height: 24px;
-  background: #e12457; }
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .menu__item-logo--teacup {
+    background-image: url("../img/life__icon_teapot.png"); }
+  .menu__item-logo--helmet {
+    background-image: url("../img/life__icon_helmet.png"); }
+  .menu__item-logo--microscope {
+    background-image: url("../img/life__icon_microscope.png"); }
+  .menu__item-logo--photo {
+    background-image: url("../img/life__icon_photo.png"); }
+  .menu__item-logo--leaves {
+    background-image: url("../img/life__icon_leaves.png"); }
 
 .menu__item-title {
   font-family: "Proxima Nova", sans-serif;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: 700;
   color: #e12457;
-  margin-left: 45px;
+  margin-left: 35px;
   position: relative;
   cursor: pointer; }
 
