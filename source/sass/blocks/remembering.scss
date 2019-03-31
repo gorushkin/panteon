@@ -58,3 +58,9 @@
     margin-bottom: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .remembering {
+    background-position: -989px -1764px;
+  }
+}
