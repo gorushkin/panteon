@@ -9,9 +9,12 @@
   font-size: 0;
   width: 55px;
   height: 39px;
-  box-shadow: 0 0 0 3px white;
   cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 @media (min-width: $tablet-width) {
   .navigation {
@@ -22,6 +25,18 @@
     @include first-font (18px, 500, 30px, #ffffff);
     letter-spacing: 0.45px;
     width: 115px;
+    // box-shadow: 0 0 0 3px white;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation__text {
+    @include first-font (18px, 500, 24px, #ffffff);
+  }
+
+  .navigation__btn {
+    width: 47px;
+    height: 18px;
   }
 }
 

@@ -10,7 +10,7 @@
   <style>
     html {
       background-repeat: no-repeat;
-      background-position: 50% -35px;
+      background-position: 50% 0;
       background-image: url("pp/mobile_1.jpg");
     }
 
@@ -44,7 +44,10 @@
           </p>
         </div>
         <label for="menu-toggle">
-          <div class="navigation__toggle">Меню</div>
+          <div class="navigation__toggle">
+            <span class="navigation__text">Меню</span>
+            <img src="img/menu_burger-btn.png" alt="" class="navigation__btn" width="47" height="18" >
+          </div>
         </label>
       </div>
       <input class="header__menu-toggle visually-hidden" type="checkbox" id="menu-toggle">
@@ -58,7 +61,12 @@
         <p class="promo__title">Марс</p>
         <div class="promo__video-wrapper">
           <!-- <div class="promo__video-back"></div> -->
-          <div class="promo__video"></div>
+          <div class="promo__btn-wrapper">
+            <img src="img/play_btn.png" alt="" class="promo__play-btn" width="52" height="52">
+            <span class="promo__play-text">Смотреть видео</span>
+          </div>
+          <div class="promo__video">
+          </div>
           <p class="promo__video-description">Первый город
               на планете Марс
               недалеко от горы
