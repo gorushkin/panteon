@@ -535,8 +535,10 @@ img {
   font-size: 0;
   width: 55px;
   height: 39px;
-  box-shadow: 0 0 0 3px white;
-  cursor: pointer; }
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; }
 
 @media (min-width: 750px) {
   .navigation {
@@ -548,7 +550,18 @@ img {
     font-weight: 500;
     color: #ffffff;
     letter-spacing: 0.45px;
-    width: 115px; } }
+    width: 115px;
+    display: flex;
+    justify-content: space-between; }
+  .navigation__text {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #ffffff; }
+  .navigation__btn {
+    width: 47px;
+    height: 18px; } }
 
 @media (min-width: 1170px) {
   .navigation {
@@ -704,6 +717,19 @@ img {
   height: 100%;
   opacity: 0.3; }
 
+.promo__btn-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.promo__play-text {
+  display: none; }
+
 .promo__video-description {
   font-family: "Proxima Nova", sans-serif;
   font-size: 14px;
@@ -718,11 +744,14 @@ img {
   display: block;
   width: 59px;
   height: 59px;
-  background-color: #e12457;
+  background: url("../img/promo__next-button.png") no-repeat center;
+  background-size: cover;
   opacity: 0.5;
   border-radius: 50%;
   cursor: pointer;
   border: none; }
+  .promo__next-button:hover {
+    opacity: 1; }
 
 @media (min-width: 750px) {
   .promo {
@@ -755,9 +784,18 @@ img {
     height: 255px;
     margin-bottom: 60px;
     margin-right: 12px; }
+  .promo__play-btn {
+    margin-right: 15px; }
+  .promo__play-text {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+    line-height: 17px;
+    font-weight: 500;
+    color: #ffffff;
+    display: block; }
   .promo__video-description {
     font-family: "Proxima Nova", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 17px;
     font-weight: 200;
     color: #ffcfdf;

@@ -1,37 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
   <title>Panteon</title>
-  <!-- Pixel Glass -->
-  <style>
-    html {
-      background-repeat: no-repeat;
-      background-position: 50% -35px;
-      background-image: url("pp/mobile_1.jpg");
-    }
 
-    @media (min-width: 750px) {
-      html {
-        /* Tablet layout */
-        background-position: 50% 0;
-        background-image: url("pp/tablet_1.jpg");
-      }
-    }
-
-    @media (min-width: 1170px) {
-      html {
-        /* Tablet layout */
-        background-image: url("pp/desktop_1.jpg");
-      }
-    }
-  </style>
-  <script src="js/pixel-glass.js"></script>
-  <!-- // Pixel Glass -->
 </head>
+
 <body>
   <header class="header">
     <div class="wrapper">
@@ -44,7 +22,10 @@
           </p>
         </div>
         <label for="menu-toggle">
-          <div class="navigation__toggle">Меню</div>
+          <div class="navigation__toggle">
+            <span class="navigation__text">Меню</span>
+            <img src="img/menu_burger-btn.png" alt="" class="navigation__btn" width="47" height="18">
+          </div>
         </label>
       </div>
       <input class="header__menu-toggle visually-hidden" type="checkbox" id="menu-toggle">
@@ -58,11 +39,16 @@
         <p class="promo__title">Марс</p>
         <div class="promo__video-wrapper">
           <!-- <div class="promo__video-back"></div> -->
-          <div class="promo__video"></div>
+          <div class="promo__btn-wrapper">
+            <img src="img/play_btn.png" alt="" class="promo__play-btn" width="52" height="52">
+            <span class="promo__play-text">Смотреть видео</span>
+          </div>
+          <div class="promo__video">
+          </div>
           <p class="promo__video-description">Первый город
-              на планете Марс
-              недалеко от горы
-              Олимп</p>
+            на планете Марс
+            недалеко от горы
+            Олимп</p>
         </div>
         <button class="promo__next-button"></button>
       </div>
@@ -113,34 +99,45 @@
 
     <section class="remembering">
       <h2 class="section-title visually-hidden">Что такое Марс</h2>
-        <div class="remembering-wrapper wrapper">
-          <p class="remembering__promo-text">Марс. Вспомнить&nbspвсё</p>
-          <ul class="remembering__list">
-            <li class="remembering__block">
-              <h3 class="remembering__title">Что такое Марс?</h3>
-              <p class="remembering__text">Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.</p>
-              <p class="remembering__text">Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв. </p>
-            </li>
-            <li class="remembering__block">
-              <h3 class="remembering__title">Где это? Как туда доехать?</h3>
-              <p class="remembering__text">Расстояние до Марса — почти 56 миллионов километров.</p>
-              <p class="remembering__text">Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8 месяцев.</p>
-            </li>
-          </ul>
-        </div>
+      <div class="remembering-wrapper wrapper">
+        <p class="remembering__promo-text">Марс. Вспомнить&nbspвсё</p>
+        <ul class="remembering__list">
+          <li class="remembering__block">
+            <h3 class="remembering__title">Что такое Марс?</h3>
+            <p class="remembering__text">Планета Солнечной системы, названа в честь Марса — древнеримского бога войны.
+              Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом
+              железа.</p>
+            <p class="remembering__text">Особенности планеты — наличие слабой отмосферы, состоящей в основном из
+              улекислого газа, времена года, пылевые бури, сильная эррозия почв. </p>
+          </li>
+          <li class="remembering__block">
+            <h3 class="remembering__title">Где это? Как туда доехать?</h3>
+            <p class="remembering__text">Расстояние до Марса — почти 56 миллионов километров.</p>
+            <p class="remembering__text">Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8
+              месяцев.</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="info wrapper">
       <h2 class="info__promo-text">От&nbspидеи до&nbspреализации</h2>
       <h3 class="info__title">Илон Маск. Гений или безумец?</h3>
       <div class="info__text-block">
-        <p class="info__text info__text--first-block">Канадско-американский инженер, предприниматель, изобретатель и инвестор; миллиардер. Основатель компаний SpaceX и X.com, позже переименованной в PayPal. Планирует потратить большую часть накоплений на реализацию своей мечты, а также мечты многих тысяч романтиков, писателей, учёных: создать внеземную цивилизацию.</p>
-        <p class="info__text info__text--quotes">Мы должны сделать эту мечту реальностью за наше время жизни. Любой человек, который пожелает отправиться на Марс, должен иметь такую возможность</p>
+        <p class="info__text info__text--first-block">Канадско-американский инженер, предприниматель, изобретатель и
+          инвестор; миллиардер. Основатель компаний SpaceX и X.com, позже переименованной в PayPal. Планирует потратить
+          большую часть накоплений на реализацию своей мечты, а также мечты многих тысяч романтиков, писателей, учёных:
+          создать внеземную цивилизацию.</p>
+        <p class="info__text info__text--quotes">Мы должны сделать эту мечту реальностью за наше время жизни. Любой
+          человек, который пожелает отправиться на Марс, должен иметь такую возможность</p>
       </div>
       <img class="info__photo" alt="" src="img/info-photo_mobile.png" width="165" height="189">
       <div class="info__text-block info__text-block--second">
-        <p class="info__text info__text--last-block"> — заявил Маск на Международной астронавтической конференции в Гвадалахаре (Мексика). Он обосновал необходимость своего проекта вопросом выживания человечества, которое для своего сохранения должно стать «космическим видом».</p>
-        <p class="info__text info__text--last-block">Илон поставил перед собой цель: скоратить стоимость вывода кораблей в космос в 10 раз, что станет первым шагом для человечества в освоении Марса.</p>
+        <p class="info__text info__text--last-block"> — заявил Маск на Международной астронавтической конференции в
+          Гвадалахаре (Мексика). Он обосновал необходимость своего проекта вопросом выживания человечества, которое для
+          своего сохранения должно стать «космическим видом».</p>
+        <p class="info__text info__text--last-block">Илон поставил перед собой цель: скоратить стоимость вывода кораблей
+          в космос в 10 раз, что станет первым шагом для человечества в освоении Марса.</p>
       </div>
     </section>
 
@@ -190,33 +187,49 @@
               <label class="answers__title" for="answers-1">Жить или выживать?</label>
               <div class="answers__text">
                 <p>Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?</p>
-                <p>Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов, а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев.</p>
-                <p>На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью создать новую цивилизацию.</p>
+                <p>Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых
+                  газов, а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на
+                  планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев.</p>
+                <p>На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при
+                  длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один
+                  конец с целью создать новую цивилизацию.</p>
               </div>
             </li>
             <li class="answers__item">
               <label class="answers__title" for="answers-2">Готовы ли технологии?</label>
               <div class="answers__text">
-                  <p>Готовы ли технологии? Готовы ли технологии? Готовы ли технологии?</p>
-                  <p>Готовы ли технологии? Готовы ли технологии? Готовы ли технологии? </p>
-                  <p>Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов, а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев.</p>
-                  <p>На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью создать новую цивилизацию.</p>
+                <p>Готовы ли технологии? Готовы ли технологии? Готовы ли технологии?</p>
+                <p>Готовы ли технологии? Готовы ли технологии? Готовы ли технологии? </p>
+                <p>Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых
+                  газов, а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на
+                  планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев.</p>
+                <p>На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при
+                  длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один
+                  конец с целью создать новую цивилизацию.</p>
               </div>
             </li>
             <li class="answers__item">
               <label class="answers__title" for="answers-3">Путешествие на грани фантастики</label>
               <div class="answers__text">
-                  <p>Путешествие на грани фантастики Путешествие на грани фантастики Путешествие на грани фантастики</p>
-                  <p>Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов, а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев.</p>
-                  <p>На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью создать новую цивилизацию.</p>
+                <p>Путешествие на грани фантастики Путешествие на грани фантастики Путешествие на грани фантастики</p>
+                <p>Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых
+                  газов, а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на
+                  планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев.</p>
+                <p>На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при
+                  длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один
+                  конец с целью создать новую цивилизацию.</p>
               </div>
             </li>
             <li class="answers__item">
               <label class="answers__title" for="answers-4">Жизнь на Марсе</label>
               <div class="answers__text">
-                  <p>Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?</p>
-                  <p>Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов, а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев.</p>
-                  <p>На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью создать новую цивилизацию.</p>
+                <p>Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?</p>
+                <p>Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых
+                  газов, а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на
+                  планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев.</p>
+                <p>На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при
+                  длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один
+                  конец с целью создать новую цивилизацию.</p>
               </div>
             </li>
           </ul>
@@ -245,7 +258,7 @@
                 <p class="menu__description">В основе жилых помещений лежат надувные компоненты — спальня,
                   рабочая зона, гостиная, парник для выращивания зелени — 50 м2 на человека. Благодаря этим
                   компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду.
-                    Весь комплекс соединен сетью ходов.</p>
+                  Весь комплекс соединен сетью ходов.</p>
                 <a href="" class="menu__link">Подробнее</a>
               </div>
             </li>
@@ -280,8 +293,8 @@
                 </picture>
                 <h3 class="menu__title">Проживание</h3>
                 <p class="menu__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sequi at voluptatem repudiandae exercitationem quidem suscipit saepe repellat vero,
-                    temporibus magni iste ab numquam soluta error animi consectetur quasi. Unde, possimus?</p>
+                  Sequi at voluptatem repudiandae exercitationem quidem suscipit saepe repellat vero,
+                  temporibus magni iste ab numquam soluta error animi consectetur quasi. Unde, possimus?</p>
                 <a href="" class="menu__link">Подробнее</a>
               </div>
             </li>
@@ -290,7 +303,7 @@
                 <div class="menu__item-logo menu__item-logo--photo"></div>
                 <label for="item-number_1" class="menu__item-title">Проживание</label>
               </div>
-              <div class="menu__block" >
+              <div class="menu__block">
                 <picture>
                   <source media="(min-width: 1170px)" srcset="https://via.placeholder.com/985x457">
                   <source media="(min-width: 750px)" srcset="https://via.placeholder.com/719x334">
@@ -298,8 +311,8 @@
                 </picture>
                 <h3 class="menu__title">Проживание</h3>
                 <p class="menu__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sequi at voluptatem repudiandae exercitationem quidem suscipit saepe repellat vero,
-                    temporibus magni iste ab numquam soluta error animi consectetur quasi. Unde, possimus?</p>
+                  Sequi at voluptatem repudiandae exercitationem quidem suscipit saepe repellat vero,
+                  temporibus magni iste ab numquam soluta error animi consectetur quasi. Unde, possimus?</p>
                 <a href="" class="menu__link">Подробнее</a>
               </div>
             </li>
@@ -308,7 +321,7 @@
                 <div class="menu__item-logo menu__item-logo--leaves"></div>
                 <label for="item-number_1" class="menu__item-title">Проживание</label>
               </div>
-              <div class="menu__block" >
+              <div class="menu__block">
                 <picture>
                   <source media="(min-width: 1170px)" srcset="https://via.placeholder.com/985x457">
                   <source media="(min-width: 750px)" srcset="https://via.placeholder.com/719x334">
@@ -316,8 +329,8 @@
                 </picture>
                 <h3 class="menu__title">Проживание</h3>
                 <p class="menu__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sequi at voluptatem repudiandae exercitationem quidem suscipit saepe repellat vero,
-                    temporibus magni iste ab numquam soluta error animi consectetur quasi. Unde, possimus?</p>
+                  Sequi at voluptatem repudiandae exercitationem quidem suscipit saepe repellat vero,
+                  temporibus magni iste ab numquam soluta error animi consectetur quasi. Unde, possimus?</p>
                 <a href="" class="menu__link">Подробнее</a>
               </div>
             </li>
@@ -332,7 +345,9 @@
         <h2 class="money__title">Деньги приготовил. Когда&nbsp;вылетаем?</h2>
         <div class="money__block-container">
           <div class="money__text-block">
-            <p class="money__text">Первый «частный» полёт на Марс осуществит в 2018 году в беспилотном варианте корабль Dragon V2 с помощью тяжёлой ракеты Falcon Heavy. После этого запланированы две миссии в 2020 году, как минимум одна в 2022-м и, вероятно, пилотируемая миссия через два года с достижением Марса в 2025 году.</p>
+            <p class="money__text">Первый «частный» полёт на Марс осуществит в 2018 году в беспилотном варианте корабль
+              Dragon V2 с помощью тяжёлой ракеты Falcon Heavy. После этого запланированы две миссии в 2020 году, как
+              минимум одна в 2022-м и, вероятно, пилотируемая миссия через два года с достижением Марса в 2025 году.</p>
             <p class="money__text">Для всех желающих открыты курсы подготовки.</p>
             <p class="money__text">За 40-100 ближайших лет на Марс планируется доставить до 1 млн.</p>
             <a href="#" class="money__link">Критерии отбора</a>
@@ -387,4 +402,5 @@
   </main>
   <script src="js/menu.js"></script>
 </body>
+
 </html>
